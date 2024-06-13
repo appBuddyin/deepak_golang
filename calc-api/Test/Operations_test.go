@@ -101,7 +101,7 @@ func Test_operation_divide(t *testing.T) {
 			{
 				name: "test_divide_func2",
 				args: args{operand1: 10,operand2: 0},
-				want: 10,
+				want: 0,
 			},
 	}
 
