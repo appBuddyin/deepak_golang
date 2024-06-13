@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"calc-api/Service"
 	"encoding/json"
 	"net/http"
 )
@@ -10,9 +11,10 @@ func SubtractHandler(w http.ResponseWriter, r *http.Request) {
 	if !ok {
 		return
 	}
-	
+
+	operation := Service.CreateOperationInstance()
 	res := Response{
-		Result: req.Operand1 - req.Operand2,
+		Result: operation.Subtract(req.Operand1, req.Operand2),
 	}
 
 	logRequest("subtract", req, res)

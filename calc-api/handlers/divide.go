@@ -3,6 +3,7 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
+	"calc-api/Service"
 )
 
 func DivideHandler(w http.ResponseWriter, r *http.Request) {
@@ -10,12 +11,14 @@ func DivideHandler(w http.ResponseWriter, r *http.Request) {
 	if !ok {
 		return
 	}
-	
+
+	service := Service.CreateOperationInstance()
+	result, err := service.Divide(req.Operand1, req.Operand2)
 	var res Response
-	if req.Operand2 == 0 {
-		res.Error = "Division by zero"
+	if err != nil {
+		res.Error = err.Error()
 	} else {
-		res.Result = req.Operand1 / req.Operand2
+		res.Result = result
 	}
 
 	logRequest("divide", req, res)
