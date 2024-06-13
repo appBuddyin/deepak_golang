@@ -1,0 +1,8 @@
+2024/06/13 08:51:21 Time: 2024-06-13T08:51:21+05:30, Operation: add, Operands: [10.000000, 5.000000], Result: 15.000000, Error: 
+
+2024/06/13 08:51:57 Time: 2024-06-13T08:51:57+05:30, Operation: subtract, Operands: [10.000000, 5.000000], Result: 5.000000, Error: 
+
+2024/06/13 08:52:13 Time: 2024-06-13T08:52:13+05:30, Operation: divide, Operands: [10.000000, 5.000000], Result: 2.000000, Error: 
+
+2024/06/13 08:52:19 Time: 2024-06-13T08:52:19+05:30, Operation: divide, Operands: [10.000000, 0.000000], Result: 0.000000, Error: Division by zero
+
