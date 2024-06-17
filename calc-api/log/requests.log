@@ -6,3 +6,21 @@
 
 2024/06/13 08:52:19 Time: 2024-06-13T08:52:19+05:30, Operation: divide, Operands: [10.000000, 0.000000], Result: 0.000000, Error: Division by zero
 
+2024/06/17 09:13:05 Time: 2024-06-17T09:13:05+05:30, Operation: add, Operands: [10.000000, 5.000000], Result: 15.000000, Error: 
+
+2024/06/17 09:13:35 Time: 2024-06-17T09:13:35+05:30, Operation: divide, Operands: [10.000000, 5.000000], Result: 2.000000, Error: 
+
+2024/06/17 09:13:53 Time: 2024-06-17T09:13:53+05:30, Operation: subtract, Operands: [10.000000, 5.000000], Result: 5.000000, Error: 
+
+2024/06/17 09:14:05 Time: 2024-06-17T09:14:05+05:30, Operation: subtract, Operands: [10.000000, 5.000000], Result: 5.000000, Error: 
+
+2024/06/17 09:15:16 Time: 2024-06-17T09:15:16+05:30, Operation: subtract, Operands: [10.000000, 5.000000], Result: 5.000000, Error: 
+
+2024/06/17 09:16:50 Time: 2024-06-17T09:16:50+05:30, Operation: subtract, Operands: [10.000000, 5.000000], Result: 5.000000, Error: 
+
+2024/06/17 09:18:59 Time: 2024-06-17T09:18:59+05:30, Operation: subtract, Operands: [9.000000, 5.000000], Result: 4.000000, Error: 
+
+2024/06/17 09:20:31 Time: 2024-06-17T09:20:31+05:30, Operation: Multiply, Operands: [9.000000, 5.000000], Result: 45.000000, Error: 
+
+2024/06/17 09:21:30 Time: 2024-06-17T09:21:30+05:30, Operation: subtract, Operands: [9.000000, 5.000000], Result: 4.000000, Error: 
+

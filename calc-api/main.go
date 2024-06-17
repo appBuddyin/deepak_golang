@@ -6,9 +6,8 @@ import (
 	"os"
 
 	"calc-api/handlers"
+
 	"github.com/gorilla/mux"
-
-
 )
 
 func main() {

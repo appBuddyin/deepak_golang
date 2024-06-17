@@ -1,6 +1,9 @@
 package Service
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 type Operations interface {
 	Add(operand1, operand2 float64) float64
@@ -25,7 +28,7 @@ func (operation) Multiply(operand1, operand2 float64) float64 {
 
 func (operation) Divide(operand1, operand2 float64) (float64, error) {
 	if operand2 == 0 {
-		return 0, fmt.Errorf("division by zero")
+		return math.NaN(), fmt.Errorf("division by zero")
 	}
 	return operand1 / operand2, nil
 }

@@ -1,9 +1,9 @@
 package handlers
 
 import (
+	"calc-api/Service"
 	"encoding/json"
 	"net/http"
-	"calc-api/Service"
 )
 
 func MultiplyHandler(w http.ResponseWriter, r *http.Request) {
@@ -14,10 +14,10 @@ func MultiplyHandler(w http.ResponseWriter, r *http.Request) {
 
 	service := Service.CreateOperationInstance()
 	res := Response{
-		Result: service.Subtract(req.Operand1, req.Operand2),
+		Result: service.Multiply(req.Operand1, req.Operand2),
 	}
 
-	logRequest("subtract", req, res)
+	logRequest("Multiply", req, res)
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(res)
